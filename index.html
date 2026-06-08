@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Red+Rose:wght@400;600;700&family=Sansita:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- Importación de Íconos FontAwesome -->
+    <!-- Importación de Íconos FontAwesome (Incluye íconos de redes sociales) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Enlace a tu CSS con la ruta corregida -->
+    <!-- Enlace a tu CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -54,9 +54,7 @@
         <div class="grid-container">
             <!-- Producto 1 -->
             <div class="product-card">
-                <div class="img-placeholder" style="background: linear-gradient(to bottom, #2a2a2a, #111);">
-                    <!-- Aquí irá tu etiqueta <img> con la Midnight Rose -->
-                </div>
+                <div class="img-placeholder" style="background: linear-gradient(to bottom, #2a2a2a, #111);"></div>
                 <div class="card-content">
                     <div class="stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -68,9 +66,7 @@
 
             <!-- Producto 2 -->
             <div class="product-card">
-                <div class="img-placeholder" style="background: linear-gradient(to bottom, #3a2a2a, #111);">
-                    <!-- Aquí irá tu etiqueta <img> con la Sweet Sight -->
-                </div>
+                <div class="img-placeholder" style="background: linear-gradient(to bottom, #3a2a2a, #111);"></div>
                 <div class="card-content">
                     <div class="stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
@@ -82,9 +78,7 @@
 
             <!-- Producto 3 -->
             <div class="product-card">
-                <div class="img-placeholder" style="background: linear-gradient(to bottom, #4a3a1a, #111);">
-                    <!-- Aquí irá tu etiqueta <img> con el Destello de Sol -->
-                </div>
+                <div class="img-placeholder" style="background: linear-gradient(to bottom, #4a3a1a, #111);"></div>
                 <div class="card-content">
                     <div class="stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
@@ -138,7 +132,20 @@
         </div>
 
         <div class="contact-container">
-            <!-- Reemplaza "TU_CORREO@GMAIL.COM" con tu correo real -->
+            
+            <!-- NUEVO: BOTÓN DE INSTAGRAM -->
+            <div class="social-contact">
+                <!-- Cambia "TU_USUARIO" por el nombre de tu cuenta de Instagram -->
+                <a href="https://instagram.com/TU_USUARIO" target="_blank" class="instagram-btn">
+                    <i class="fa-brands fa-instagram"></i> Envíanos un DM en Instagram
+                </a>
+            </div>
+
+            <div class="divider">
+                <span>O envíanos un correo electrónico</span>
+            </div>
+
+            <!-- FORMULARIO DE CORREO -->
             <form action="https://formsubmit.co/TU_CORREO@GMAIL.COM" method="POST" class="contact-form">
                 
                 <div class="input-group">
@@ -153,7 +160,6 @@
                     <textarea name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
                 </div>
                 
-                <!-- Configuraciones de FormSubmit -->
                 <input type="hidden" name="_subject" value="¡Nuevo mensaje de Velange!">
                 <input type="hidden" name="_captcha" value="false">
                 
