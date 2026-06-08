@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Red+Rose:wght@400;600;700&family=Sansita:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- Importación de Íconos FontAwesome (Incluye íconos de redes sociales) -->
+    <!-- Importación de Íconos FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Enlace a tu CSS -->
@@ -24,8 +24,9 @@
         <ul class="nav-links">
             <li><a href="#catalogo">Catálogo</a></li>
             <li><a href="#por-que">Por qué elegirnos?</a></li>
-            <li><a href="#modal-contacto">Contacto</a></li> <!-- Asegúrate de que diga esto -->
-        </ul>        <div class="cart-icon">
+            <li><a href="#modal-contacto">Contacto</a></li>
+        </ul>
+        <div class="cart-icon">
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
     </nav>
@@ -123,12 +124,9 @@
         </div>
     </section>
 
-    <!-- SECCIÓN CONTACTO -->
-    <section id="contacto" class="contact-section">
-<!-- VENTANA EMERGENTE (MODAL) DE CONTACTO -->
+    <!-- VENTANA EMERGENTE (MODAL) DE CONTACTO -->
     <div id="modal-contacto" class="modal-overlay">
         <div class="modal-content">
-            <!-- Botón para cerrar el modal -->
             <a href="#" class="close-modal"><i class="fa-solid fa-xmark"></i></a>
             
             <div class="section-header" style="margin-bottom: 20px;">
@@ -137,9 +135,17 @@
             </div>
 
             <div class="social-contact">
-                <!-- Cambia "TU_USUARIO" -->
-                <a href="https://www.instagram.com/velange.oficial/" target="_blank" class="instagram-btn">
-                    <i class="fa-brands fa-instagram"></i> Envíanos un DM en Instagram
+                <a href="https://instagram.com/TU_USUARIO" target="_blank" class="social-btn instagram-btn">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                
+                <a href="https://tiktok.com/@TU_USUARIO" target="_blank" class="social-btn tiktok-btn">
+                    <i class="fa-brands fa-tiktok"></i> TikTok
+                </a>
+
+                <!-- Reemplaza los ceros por tu número real -->
+                <a href="https://wa.me/593000000000?text=Hola,%20me%20interesan%20las%20rosas%20eternas%20de%20Velange" target="_blank" class="social-btn whatsapp-btn">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
                 </a>
             </div>
 
@@ -164,7 +170,6 @@
             </form>
         </div>
     </div>
-    </section>
 
 </body>
 </html>
