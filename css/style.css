@@ -158,15 +158,6 @@ body {
     color: var(--text-white);
 }
 
-.back-arrow {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    cursor: pointer;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -190,7 +181,6 @@ body {
 .img-placeholder {
     width: 100%;
     height: 250px;
-    /* Aquí se mostrará tu imagen cuando la agregues */
 }
 
 .card-content {
@@ -235,7 +225,7 @@ body {
 }
 
 .icon-box {
-    background-color: #5a0b0b; /* Fondo rojo oscuro */
+    background-color: #5a0b0b;
     width: 70px;
     height: 70px;
     border-radius: 12px;
@@ -255,10 +245,12 @@ body {
     font-size: 1.1rem;
     line-height: 1.8;
 }
+
 /* --- SECCIÓN CONTACTO --- */
 .contact-section {
     padding: 80px 10%;
     position: relative;
+    margin-bottom: 50px;
 }
 
 .contact-container {
@@ -287,10 +279,9 @@ body {
     font-family: var(--font-text);
     font-size: 1rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    resize: none; /* Evita que deformen el diseño estirando el cuadro de texto */
+    resize: none;
 }
 
-/* Efecto cuando el usuario hace clic para escribir */
 .input-group input:focus,
 .input-group textarea:focus {
     outline: none;
@@ -298,7 +289,6 @@ body {
     box-shadow: 0 0 8px rgba(247, 168, 184, 0.2);
 }
 
-/* Estilos del botón de enviar */
 .submit-btn {
     background-color: var(--accent-red);
     color: var(--text-white);
@@ -314,6 +304,6 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #7a0c0c; /* Un rojo un poco más oscuro */
+    background-color: #7a0c0c;
     transform: translateY(-3px);
 }
