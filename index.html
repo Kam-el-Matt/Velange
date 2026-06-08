@@ -101,15 +101,14 @@
     </section>
 
     <!-- SECCIÓN CONTACTO (HORIZONAL) -->
+<!-- SECCIÓN CONTACTO (HORIZONTAL) -->
     <section id="contacto" class="contact-section">
         <div class="contact-container">
-            <!-- Título general del cuadro -->
             <div class="contact-header">
                 <h2>Contáctanos</h2>
                 <p>Elige cómo prefieres comunicarte con nosotros.</p>
             </div>
 
-            <!-- Estructura de dos columnas -->
             <div class="contact-grid">
                 
                 <!-- COLUMNA IZQUIERDA: Redes -->
@@ -124,7 +123,7 @@
                             <i class="fa-brands fa-tiktok"></i> TikTok
                         </a>
 
-                        <a href="https://wa.me/59300967574922?text=Hola,%20me%20interesan%20las%20rosas%20eternas%20de%20Velange" target="_blank" class="social-btn whatsapp-btn">
+                        <a href="https://wa.me/593967574922?text=Hola,%20me%20interesan%20las%20rosas%20eternas%20de%20Velange" target="_blank" class="social-btn whatsapp-btn">
                             <i class="fa-brands fa-whatsapp"></i> WhatsApp
                         </a>
                     </div>
@@ -136,7 +135,9 @@
                 <!-- COLUMNA DERECHA: Formulario -->
                 <div class="contact-right">
                     <h3>Envíanos un correo</h3>
-                    <form action="https://formsubmit.co/TU_CORREO@GMAIL.COM" method="POST" class="contact-form">
+                    
+                    <!-- ENLACE DE FORMSPREE APLICADO AQUÍ -->
+                    <form action="https://formspree.io/f/meewglqa" method="POST" class="contact-form">
                         <div class="input-group">
                             <input type="text" name="nombre" placeholder="Tu Nombre" required>
                         </div>
@@ -146,8 +147,6 @@
                         <div class="input-group">
                             <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
                         </div>
-                        <input type="hidden" name="_subject" value="¡Nuevo mensaje de Velange!">
-                        <input type="hidden" name="_captcha" value="false">
                         
                         <button type="submit" class="submit-btn">Enviar Mensaje</button>
                     </form>
@@ -156,6 +155,5 @@
             </div>
         </div>
     </section>
-
 </body>
 </html>
