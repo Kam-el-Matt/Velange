@@ -255,3 +255,65 @@ body {
     font-size: 1.1rem;
     line-height: 1.8;
 }
+/* --- SECCIÓN CONTACTO --- */
+.contact-section {
+    padding: 80px 10%;
+    position: relative;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--card-dark);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: var(--text-white);
+    font-family: var(--font-text);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: none; /* Evita que deformen el diseño estirando el cuadro de texto */
+}
+
+/* Efecto cuando el usuario hace clic para escribir */
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-pink);
+    box-shadow: 0 0 8px rgba(247, 168, 184, 0.2);
+}
+
+/* Estilos del botón de enviar */
+.submit-btn {
+    background-color: var(--accent-red);
+    color: var(--text-white);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #7a0c0c; /* Un rojo un poco más oscuro */
+    transform: translateY(-3px);
+}

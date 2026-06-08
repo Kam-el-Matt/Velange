@@ -132,4 +132,35 @@
     </section>
 
 </body>
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contact-section">
+        <div class="section-header">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna duda o un pedido especial? Escríbenos y haremos tu idea realidad.</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Reemplaza "TU_CORREO@GMAIL.COM" con tu correo real -->
+            <form action="https://formsubmit.co/TU_CORREO@GMAIL.COM" method="POST" class="contact-form">
+                
+                <div class="input-group">
+                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                </div>
+                
+                <div class="input-group">
+                    <textarea name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                </div>
+                
+                <!-- Configuraciones de FormSubmit (opcionales) -->
+                <input type="hidden" name="_subject" value="¡Nuevo mensaje de Velange!">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
 </html>
