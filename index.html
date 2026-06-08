@@ -20,11 +20,9 @@
         <ul class="nav-links">
             <li><a href="#catalogo">Catálogo</a></li>
             <li><a href="#por-que">Por qué elegirnos?</a></li>
-            <li><a href="#contacto">Contacto</a></li> <!-- Modificado para que baje directo -->
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <div class="cart-icon">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+        <!-- El ícono del carrito fue eliminado de aquí -->
     </nav>
 
     <!-- SECCIÓN HERO -->
@@ -102,47 +100,60 @@
         </div>
     </section>
 
-    <!-- SECCIÓN CONTACTO (AQUÍ MISMO, SIN VENTANAS) -->
+    <!-- SECCIÓN CONTACTO (HORIZONAL) -->
     <section id="contacto" class="contact-section">
         <div class="contact-container">
-            <div class="section-header" style="margin-bottom: 25px;">
+            <!-- Título general del cuadro -->
+            <div class="contact-header">
                 <h2>Contáctanos</h2>
                 <p>Elige cómo prefieres comunicarte con nosotros.</p>
             </div>
 
-            <div class="social-contact">
-                <a href="https://instagram.com/TU_USUARIO" target="_blank" class="social-btn instagram-btn">
-                    <i class="fa-brands fa-instagram"></i> Instagram
-                </a>
+            <!-- Estructura de dos columnas -->
+            <div class="contact-grid">
                 
-                <a href="https://tiktok.com/@TU_USUARIO" target="_blank" class="social-btn tiktok-btn">
-                    <i class="fa-brands fa-tiktok"></i> TikTok
-                </a>
+                <!-- COLUMNA IZQUIERDA: Redes -->
+                <div class="contact-left">
+                    <h3>Nuestras Redes</h3>
+                    <div class="social-contact">
+                        <a href="https://instagram.com/TU_USUARIO" target="_blank" class="social-btn instagram-btn">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        
+                        <a href="https://tiktok.com/@TU_USUARIO" target="_blank" class="social-btn tiktok-btn">
+                            <i class="fa-brands fa-tiktok"></i> TikTok
+                        </a>
 
-                <a href="https://wa.me/593000000000?text=Hola,%20me%20interesan%20las%20rosas%20eternas%20de%20Velange" target="_blank" class="social-btn whatsapp-btn">
-                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                </a>
+                        <a href="https://wa.me/593000000000?text=Hola,%20me%20interesan%20las%20rosas%20eternas%20de%20Velange" target="_blank" class="social-btn whatsapp-btn">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SEPARADOR VERTICAL -->
+                <div class="divider-vertical"></div>
+
+                <!-- COLUMNA DERECHA: Formulario -->
+                <div class="contact-right">
+                    <h3>Envíanos un correo</h3>
+                    <form action="https://formsubmit.co/TU_CORREO@GMAIL.COM" method="POST" class="contact-form">
+                        <div class="input-group">
+                            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="¡Nuevo mensaje de Velange!">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+
             </div>
-
-            <div class="divider">
-                <span>O envíanos un correo</span>
-            </div>
-
-            <form action="https://formsubmit.co/TU_CORREO@GMAIL.COM" method="POST" class="contact-form">
-                <div class="input-group">
-                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                </div>
-                <div class="input-group">
-                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                </div>
-                <div class="input-group">
-                    <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
-                </div>
-                <input type="hidden" name="_subject" value="¡Nuevo mensaje de Velange!">
-                <input type="hidden" name="_captcha" value="false">
-                
-                <button type="submit" class="submit-btn">Enviar Mensaje</button>
-            </form>
         </div>
     </section>
 
