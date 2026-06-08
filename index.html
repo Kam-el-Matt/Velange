@@ -24,9 +24,8 @@
         <ul class="nav-links">
             <li><a href="#catalogo">Catálogo</a></li>
             <li><a href="#por-que">Por qué elegirnos?</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        <div class="cart-icon">
+            <li><a href="#modal-contacto">Contacto</a></li> <!-- Asegúrate de que diga esto -->
+        </ul>        <div class="cart-icon">
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
     </nav>
@@ -126,46 +125,45 @@
 
     <!-- SECCIÓN CONTACTO -->
     <section id="contacto" class="contact-section">
-        <div class="section-header">
-            <h2>Contáctanos</h2>
-            <p>¿Tienes alguna duda o un pedido especial? Escríbenos y haremos tu idea realidad.</p>
-        </div>
-
-        <div class="contact-container">
+<!-- VENTANA EMERGENTE (MODAL) DE CONTACTO -->
+    <div id="modal-contacto" class="modal-overlay">
+        <div class="modal-content">
+            <!-- Botón para cerrar el modal -->
+            <a href="#" class="close-modal"><i class="fa-solid fa-xmark"></i></a>
             
-            <!-- NUEVO: BOTÓN DE INSTAGRAM -->
+            <div class="section-header" style="margin-bottom: 20px;">
+                <h2>Contáctanos</h2>
+                <p>Elige cómo prefieres comunicarte con nosotros.</p>
+            </div>
+
             <div class="social-contact">
-                <!-- Cambia "TU_USUARIO" por el nombre de tu cuenta de Instagram -->
+                <!-- Cambia "TU_USUARIO" -->
                 <a href="https://instagram.com/TU_USUARIO" target="_blank" class="instagram-btn">
                     <i class="fa-brands fa-instagram"></i> Envíanos un DM en Instagram
                 </a>
             </div>
 
             <div class="divider">
-                <span>O envíanos un correo electrónico</span>
+                <span>O envíanos un correo</span>
             </div>
 
-            <!-- FORMULARIO DE CORREO -->
             <form action="https://formsubmit.co/TU_CORREO@GMAIL.COM" method="POST" class="contact-form">
-                
                 <div class="input-group">
                     <input type="text" name="nombre" placeholder="Tu Nombre" required>
                 </div>
-                
                 <div class="input-group">
                     <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
                 </div>
-                
                 <div class="input-group">
-                    <textarea name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
                 </div>
-                
                 <input type="hidden" name="_subject" value="¡Nuevo mensaje de Velange!">
                 <input type="hidden" name="_captcha" value="false">
                 
                 <button type="submit" class="submit-btn">Enviar Mensaje</button>
             </form>
         </div>
+    </div>
     </section>
 
 </body>

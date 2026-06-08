@@ -255,26 +255,64 @@ body {
     line-height: 1.8;
 }
 
-/* --- SECCIÓN CONTACTO --- */
-.contact-section {
-    padding: 80px 10%;
-    position: relative;
-    margin-bottom: 50px;
+/* --- VENTANA EMERGENTE (MODAL) DE CONTACTO --- */
+
+/* El fondo oscuro que cubre toda la pantalla. Por defecto está oculto */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro semitransparente */
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque moderno */
 }
 
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
+/* Cuando se hace clic en el enlace, el modal se muestra */
+.modal-overlay:target {
+    display: flex;
+}
+
+/* La caja flotante del formulario */
+.modal-content {
     background-color: var(--card-dark);
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(247, 168, 184, 0.15);
+    /* Animación de entrada */
+    animation: modalFadeIn 0.4s ease forwards;
 }
 
-/* Estilos para el nuevo botón de Instagram */
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* El botón de la 'X' para cerrar */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 1.8rem;
+    color: var(--text-gray);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: var(--accent-pink);
+}
+
+/* Estilos de los botones y formulario dentro del modal */
 .social-contact {
     text-align: center;
-    margin-bottom: 15px;
 }
 
 .instagram-btn {
@@ -288,7 +326,7 @@ body {
     border-radius: 8px;
     text-decoration: none;
     font-family: var(--font-title);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -296,7 +334,6 @@ body {
 .instagram-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(220, 39, 67, 0.3);
-    color: white;
 }
 
 .instagram-btn i {
@@ -304,13 +341,12 @@ body {
     font-size: 1.5rem;
 }
 
-/* Separador visual */
 .divider {
     display: flex;
     align-items: center;
     text-align: center;
     color: var(--text-gray);
-    margin: 25px 0;
+    margin: 20px 0;
     font-family: var(--font-text);
 }
 
@@ -323,24 +359,23 @@ body {
 .divider::before { margin-right: 15px; }
 .divider::after { margin-left: 15px; }
 
-/* Formulario */
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .input-group input,
 .input-group textarea {
     width: 100%;
-    padding: 15px;
+    padding: 12px;
     background-color: #111;
     border: 1px solid #333;
     border-radius: 8px;
     color: var(--text-white);
     font-family: var(--font-text);
     font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.3s ease;
     resize: none;
 }
 
@@ -348,13 +383,11 @@ body {
 .input-group textarea:focus {
     outline: none;
     border-color: var(--accent-pink);
-    box-shadow: 0 0 8px rgba(247, 168, 184, 0.2);
 }
 
-/* Botón de enviar ahora es rosado */
 .submit-btn {
     background-color: var(--accent-pink);
-    color: var(--bg-dark); /* Texto oscuro para contraste */
+    color: var(--bg-dark);
     padding: 15px;
     border: none;
     border-radius: 8px;
@@ -362,10 +395,9 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
     background-color: var(--accent-pink-dark);
-    transform: translateY(-3px);
 }
