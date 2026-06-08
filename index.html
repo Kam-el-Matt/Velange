@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velange | Flores Eternas</title>
     
-    <!-- Importación de Tipografías Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Red+Rose:wght@400;600;700&family=Sansita:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Importación de Íconos FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Enlace a tu CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,14 +19,15 @@
         <ul class="nav-links">
             <li><a href="#catalogo">Catálogo</a></li>
             <li><a href="#por-que">Por qué elegirnos?</a></li>
-            <li><a href="#modal-contacto">Contacto</a></li>
+            <!-- EL CAMBIO ESTÁ AQUÍ: Ahora apunta a tu nuevo HTML -->
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
         <div class="cart-icon">
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
     </nav>
 
-    <!-- SECCIÓN HERO (Principal) -->
+    <!-- SECCIÓN HERO -->
     <header class="hero">
         <div class="hero-text">
             <h1>Amor que<br>dura <span class="highlight">para<br>siempre</span></h1>
@@ -50,9 +46,7 @@
             <h2>Nuestra Colección</h2>
             <p>Cada pieza es única, cuidadosamente preservada para ti</p>
         </div>
-
         <div class="grid-container">
-            <!-- Producto 1 -->
             <div class="product-card">
                 <div class="img-placeholder" style="background: linear-gradient(to bottom, #2a2a2a, #111);"></div>
                 <div class="card-content">
@@ -63,8 +57,6 @@
                     <p class="price">3.5$</p>
                 </div>
             </div>
-
-            <!-- Producto 2 -->
             <div class="product-card">
                 <div class="img-placeholder" style="background: linear-gradient(to bottom, #3a2a2a, #111);"></div>
                 <div class="card-content">
@@ -75,8 +67,6 @@
                     <p class="price">4$</p>
                 </div>
             </div>
-
-            <!-- Producto 3 -->
             <div class="product-card">
                 <div class="img-placeholder" style="background: linear-gradient(to bottom, #4a3a1a, #111);"></div>
                 <div class="card-content">
@@ -96,80 +86,21 @@
             <h2>¿Por qué elegir flores eternas?</h2>
             <p>Cada pieza es única, cuidadosamente preservada para ti</p>
         </div>
-
         <div class="grid-container">
-            <!-- Feature 1 -->
             <div class="feature-card">
-                <div class="icon-box">
-                    <i class="fa-regular fa-clock"></i>
-                </div>
+                <div class="icon-box"><i class="fa-regular fa-clock"></i></div>
                 <p>Nuestras rosas eternas mantienen su estructura y forma durante años, sin necesidad de mantenimiento.</p>
             </div>
-
-            <!-- Feature 2 -->
             <div class="feature-card">
-                <div class="icon-box">
-                    <i class="fa-solid fa-star"></i>
-                </div>
+                <div class="icon-box"><i class="fa-solid fa-star"></i></div>
                 <p>No necesitan agua ni luz solar, perfectas para cualquier espacio.</p>
             </div>
-
-            <!-- Feature 3 -->
             <div class="feature-card">
-                <div class="icon-box">
-                    <i class="fa-solid fa-gift"></i>
-                </div>
+                <div class="icon-box"><i class="fa-solid fa-gift"></i></div>
                 <p>Un regalo perfecto para esa persona especial, ideal para aniversarios, bodas y momentos especiales.</p>
             </div>
         </div>
     </section>
-
-    <!-- VENTANA EMERGENTE (MODAL) DE CONTACTO -->
-    <div id="modal-contacto" class="modal-overlay">
-        <div class="modal-content">
-            <a href="#" class="close-modal"><i class="fa-solid fa-xmark"></i></a>
-            
-            <div class="section-header" style="margin-bottom: 20px;">
-                <h2>Contáctanos</h2>
-                <p>Elige cómo prefieres comunicarte con nosotros.</p>
-            </div>
-
-            <div class="social-contact">
-                <a href="https://instagram.com/TU_USUARIO" target="_blank" class="social-btn instagram-btn">
-                    <i class="fa-brands fa-instagram"></i> Instagram
-                </a>
-                
-                <a href="https://tiktok.com/@TU_USUARIO" target="_blank" class="social-btn tiktok-btn">
-                    <i class="fa-brands fa-tiktok"></i> TikTok
-                </a>
-
-                <!-- Reemplaza los ceros por tu número real -->
-                <a href="https://wa.me/593000000000?text=Hola,%20me%20interesan%20las%20rosas%20eternas%20de%20Velange" target="_blank" class="social-btn whatsapp-btn">
-                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                </a>
-            </div>
-
-            <div class="divider">
-                <span>O envíanos un correo</span>
-            </div>
-
-            <form action="https://formsubmit.co/TU_CORREO@GMAIL.COM" method="POST" class="contact-form">
-                <div class="input-group">
-                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                </div>
-                <div class="input-group">
-                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                </div>
-                <div class="input-group">
-                    <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
-                </div>
-                <input type="hidden" name="_subject" value="¡Nuevo mensaje de Velange!">
-                <input type="hidden" name="_captcha" value="false">
-                
-                <button type="submit" class="submit-btn">Enviar Mensaje</button>
-            </form>
-        </div>
-    </div>
 
 </body>
 </html>

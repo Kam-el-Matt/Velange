@@ -249,55 +249,28 @@ body {
     line-height: 1.8;
 }
 
-/* --- VENTANA EMERGENTE (MODAL) DE CONTACTO --- */
-.modal-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(5px);
-}
+/* --- PÁGINA DE CONTACTO (contacto.html) --- */
 
-.modal-overlay:target {
+/* Contenedor principal que centra todo vertical y horizontalmente */
+.contact-page-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+    min-height: 80vh; /* Se adapta a la altura de la pantalla */
 }
 
-.modal-content {
+/* La caja oscura del formulario */
+.contact-container {
     background-color: var(--card-dark);
     padding: 40px;
     border-radius: 15px;
-    width: 90%;
+    width: 100%;
     max-width: 500px;
-    position: relative;
-    box-shadow: 0 15px 40px rgba(247, 168, 184, 0.15);
-    animation: modalFadeIn 0.4s ease forwards;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-@keyframes modalFadeIn {
-    from { opacity: 0; transform: translateY(-30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.close-modal {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    font-size: 1.8rem;
-    color: var(--text-gray);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.close-modal:hover {
-    color: var(--accent-pink);
-}
-
+/* Estilos de botones sociales */
 .social-contact {
     display: flex;
     flex-direction: column;
@@ -325,34 +298,16 @@ body {
     font-size: 1.3rem;
 }
 
-.instagram-btn {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
-.instagram-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(220, 39, 67, 0.3);
-    color: white;
-}
+.instagram-btn { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.instagram-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(220, 39, 67, 0.3); color: white; }
 
-.tiktok-btn {
-    background-color: #000000;
-    border: 1px solid #333;
-}
-.tiktok-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1);
-    color: white;
-}
+.tiktok-btn { background-color: #000000; border: 1px solid #333; }
+.tiktok-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1); color: white; }
 
-.whatsapp-btn {
-    background-color: #25D366;
-}
-.whatsapp-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(37, 211, 102, 0.3);
-    color: white;
-}
+.whatsapp-btn { background-color: #25D366; }
+.whatsapp-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(37, 211, 102, 0.3); color: white; }
 
+/* Separador */
 .divider {
     display: flex;
     align-items: center;
@@ -367,10 +322,10 @@ body {
     flex: 1;
     border-bottom: 1px solid #333;
 }
-
 .divider::before { margin-right: 15px; }
 .divider::after { margin-left: 15px; }
 
+/* Formulario */
 .contact-form {
     display: flex;
     flex-direction: column;
