@@ -249,28 +249,23 @@ body {
     line-height: 1.8;
 }
 
-/* --- PÁGINA DE CONTACTO (contacto.html) --- */
-
-/* Contenedor principal que centra todo vertical y horizontalmente */
-.contact-page-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 10%;
-    min-height: 80vh; /* Se adapta a la altura de la pantalla */
+/* --- SECCIÓN CONTACTO (Normal en la página) --- */
+.contact-section {
+    padding: 80px 10%;
+    margin-bottom: 50px;
 }
 
-/* La caja oscura del formulario */
 .contact-container {
     background-color: var(--card-dark);
     padding: 40px;
     border-radius: 15px;
     width: 100%;
     max-width: 500px;
+    margin: 0 auto; /* Centra la caja horizontalmente */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Estilos de botones sociales */
+/* Botones sociales */
 .social-contact {
     display: flex;
     flex-direction: column;
