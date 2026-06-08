@@ -45,6 +45,7 @@ body {
     font-size: 2.5rem;
     color: var(--text-white);
     letter-spacing: 2px;
+    text-decoration: none; /* <-- Agrega esta línea para quitar el subrayado del link */
 }
 
 .nav-links {
