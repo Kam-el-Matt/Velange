@@ -388,3 +388,81 @@ body {
         min-height: 1px;
     }
 }
+/* =======================================================
+   RESPONSIVIDAD PARA CELULARES Y TABLETS
+   ======================================================= */
+@media (max-width: 850px) {
+    
+    /* 1. NAVEGACIÓN (Menú) */
+    .navbar {
+        flex-direction: column; /* Pone el logo arriba y los links abajo */
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* 2. SECCIÓN HERO (El título principal y la caja rosada) */
+    .hero {
+        flex-direction: column; /* Pone el texto arriba y la caja abajo */
+        padding: 40px 5%;
+        text-align: center;
+        min-height: auto;
+        gap: 40px;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+    .hero-text h1 {
+        font-size: 3rem; /* Hace la letra más pequeña para que no se corte */
+        margin-bottom: 20px;
+    }
+    .hero-text p {
+        max-width: 100%;
+        font-size: 1.1rem;
+        margin: 0 auto;
+    }
+    .hero-image-box {
+        width: 100%;
+    }
+    .pink-box {
+        width: 250px; /* Hace la caja más pequeña */
+        height: 250px;
+    }
+    .box-logo {
+        font-size: 4rem;
+    }
+
+    /* 3. CATÁLOGO Y CARACTERÍSTICAS (Las cuadrículas) */
+    .collection-section, .features-section {
+        padding: 40px 5%;
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* Cambia de 3 columnas a 1 sola columna vertical */
+        gap: 25px;
+    }
+
+    /* 4. CONTACTO HORIZONTAL (Lo pasamos a vertical) */
+    .contact-section {
+        padding: 40px 5%;
+    }
+    .contact-container {
+        padding: 30px 20px;
+    }
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 30px;
+    }
+    .divider-vertical {
+        width: 100%; /* La línea separadora se vuelve horizontal */
+        height: 1px;
+        min-height: 1px;
+        margin: 10px 0;
+    }
+}
